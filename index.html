@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="data/images/favicon-16x16.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+      // $(window).on("load", function () {
+      //   $(".loader-wrapper").fadeOut("slow");
+      // });
+      // $(document).ready(function () {
+      //   setTimeout(() => {
+      //     $(".loader-wrapper").fadeOut("slow");
+      //   }, 3000);
+      //   setTimeout(() => {
+      //     $("body").removeClass(".no-scroll");
+      //   }, 3000);
+      // });
+    </script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Szymon Taranczewski</title>
+  </head>
+  <!--- loader content -->
+  <div class="loader-wrapper">
+    <div class="loader"></div>
+  </div>
+  <!--- loader content -->
+  <body class="no-scroll">
+    <div>
+      <h1 id="home" class="logo">Szymon Taranczewski</h1>
+      <div class="nav-wrapper">
+        <nav id="navbar">
+          <ul id="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <article>
+      <div class="first-container">
+        <div class="card">
+          <img class="me-img" src="./data/images/ja1.png" alt="Picture of me" />
+        </div>
+        <div class="description">
+          <h1 class="about-me">Hi, my name is</h1>
+          <p class="me-description">Szymon</p>
+          <div class="wrap-word">
+            <div class="word"></div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article>
+      <div class="second-container">
+        <div id="about" class="about-header">About me</div>
+        <div class="about-description">
+          <p>
+            Hello, my name is Szymon and I enjoy creating things like my
+            personal webpage.
+          </p>
+          <p>
+            I am a self-taught full stack developer with a passion for new web
+            technologies. I have many years of experience in teamwork, under
+            time pressure. I treat every task as a challenge.
+          </p>
+        </div>
+        <div id="skills" class="skills-info">Skills</div>
+        <div class="logo-skills">
+          <div class="html-logo">
+            <img
+              src="/data/images/lang-logo/html5.svg"
+              alt="HTML logo"
+              class="img-logo"
+            />
+          </div>
+          <div class="css-logo">
+            <img
+              src="/data/images/lang-logo/css3.svg"
+              alt="CSS logo"
+              class="img-logo"
+            />
+          </div>
+          <div class="js-logo">
+            <img
+              src="/data/images/lang-logo/javascript.svg"
+              alt="JavaScript logo"
+              class="img-logo"
+            />
+          </div>
+          <div class="react-logo">
+            <img
+              src="/data/images/lang-logo/react.svg"
+              alt="React logo"
+              class="img-logo"
+            />
+          </div>
+          <div class="node-logo">
+            <img
+              src="/data/images/lang-logo/node-js.svg"
+              alt="Node.js logo"
+              class="img-logo"
+            />
+          </div>
+          <div class="ts-logo">
+            <img
+              src="/data/images/lang-logo/typescript.svg"
+              alt="Typescript logo"
+              class="img-logo"
+            />
+          </div>
+        </div>
+      </div>
+    </article>
+    <article>
+      <div class="third-container">
+        <div id="projects" class="projects-info">Projects</div>
+        <div class="project-one">
+          <div class="project-name"></div>
+          <div class="project-img"></div>
+          <div class="project-description"></div>
+          <div class="project-lang"></div>
+        </div>
+        <div class="project-two">
+          <div class="project-name2"></div>
+          <div class="project-img2"></div>
+          <div class="project-description2"></div>
+          <div class="project-lang2"></div>
+        </div>
+        <div class="project-three">
+          <div class="project-name3"></div>
+          <div class="project-img3"></div>
+          <div class="project-description3"></div>
+          <div class="project-lang3"></div>
+        </div>
+        <div class="project-four"></div>
+        <div class="project-five">
+          <div class="project-name5"></div>
+          <div class="project-img5"></div>
+          <div class="project-description5"></div>
+          <div class="project-lang5"></div>
+        </div>
+        <div class="project-six">
+          <div class="project-name6"></div>
+          <div class="project-img6"></div>
+          <div class="project-description6"></div>
+          <div class="project-lang6"></div>
+        </div>
+      </div>
+    </article>
+    <footer>Design & Built by Szymon Taranczewski</footer>
+    <script>
+      $(document).ready(() => {
+        setTimeout(() => {
+          $(".loader-wrapper").fadeOut("slow");
+          $(".no-scroll").removeClass();
+        }, 3000);
+      });
+      $(window).on("beforeunload", function () {
+        $(window).scrollTop(0);
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
