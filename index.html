@@ -40,11 +40,11 @@
   <!--- loader content -->
   <body class="no-scroll">
     <div>
-      <h1 id="home" class="logo">Szymon Taranczewski</h1>
+      <h1 class="logo">Szymon Taranczewski</h1>
       <div class="nav-wrapper">
         <nav id="navbar">
           <ul id="menu">
-            <li><a href="#home">Home</a></li>
+            <li><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -59,7 +59,7 @@
           <img class="me-img" src="./data/images/ja1.png" alt="Picture of me" />
         </div>
         <div class="description">
-          <h1 class="about-me">Hi, my name is</h1>
+          <h1 class="about-me">Hello, I'm</h1>
           <p class="me-description">Szymon</p>
           <div class="wrap-word">
             <div class="word"></div>
@@ -132,16 +132,74 @@
       <div class="third-container">
         <div id="projects" class="projects-info">Projects</div>
         <div class="project-one">
-          <div class="project-name"></div>
-          <div class="project-img"></div>
-          <div class="project-description"></div>
-          <div class="project-lang"></div>
+          <div class="project-name">Check current weather</div>
+          <div class="project-img">
+            <img
+              src="/data/images/app-img/weatherapp.png"
+              alt="Current Weather App image"
+              class="app-img"
+            />
+          </div>
+          <div class="project-description">
+            <p class="project-des">
+              Simple application showing the current weather in any city in the
+              world. Just enter the city name and click enter. The base of the
+              application is openweathermap.com In the future I want to make it
+              responsive for all devices
+            </p>
+          </div>
+          <div class="project-lang">
+            <img
+              src="/data/images/lang-logo/html5.svg"
+              alt="HTML logo"
+              class="lang-img"
+            />
+            <img
+              src="/data/images/lang-logo/css3.svg"
+              alt="CSS logo"
+              class="lang-img"
+            />
+            <img
+              src="/data/images/lang-logo/javascript.svg"
+              alt="JavaScript logo"
+              class="lang-img"
+            />
+          </div>
         </div>
         <div class="project-two">
-          <div class="project-name2"></div>
-          <div class="project-img2"></div>
-          <div class="project-description2"></div>
-          <div class="project-lang2"></div>
+          <div class="project-name2">ToDo list</div>
+          <div class="project-img2">
+            <img
+              src="/data/images/app-img/todo.png"
+              alt="Current Weather App image"
+              class="app-img"
+            />
+          </div>
+          <div class="project-description2">
+            <p class="project-des">
+              Simple application showing the current weather in any city in the
+              world. Just enter the city name and click enter. The base of the
+              application is openweathermap.com In the future I want to make it
+              responsive for all devices
+            </p>
+          </div>
+          <div class="project-lang2">
+            <img
+              src="/data/images/lang-logo/html5.svg"
+              alt="HTML logo"
+              class="lang-img"
+            />
+            <img
+              src="/data/images/lang-logo/css3.svg"
+              alt="CSS logo"
+              class="lang-img"
+            />
+            <img
+              src="/data/images/lang-logo/javascript.svg"
+              alt="JavaScript logo"
+              class="lang-img"
+            />
+          </div>
         </div>
         <div class="project-three">
           <div class="project-name3"></div>
@@ -170,7 +228,7 @@
         setTimeout(() => {
           $(".loader-wrapper").fadeOut("slow");
           $(".no-scroll").removeClass();
-        }, 3000);
+        }, 2000);
       });
       $(window).on("beforeunload", function () {
         $(window).scrollTop(0);
