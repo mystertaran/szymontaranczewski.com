@@ -45,7 +45,7 @@ body {
   overflow: hidden;
 }
 
-article {
+section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -350,7 +350,7 @@ footer {
     "projects-info projects-info projects-info"
     "project-one project-two project-three"
     "project-four project-five project-six";
-  max-width: 380px;
+  max-width: 768px;
   min-width: 300px;
   height: auto;
   margin-top: 140px;
