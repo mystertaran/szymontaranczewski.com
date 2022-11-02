@@ -711,8 +711,8 @@ footer {
   min-width: 300px;
   height: auto;
   margin-top: 140px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .contact {
@@ -732,10 +732,14 @@ footer {
   text-align: center;
   font-size: 14px;
   letter-spacing: 1px;
+  margin-bottom: 15px;
 }
 
 .contact-icons {
-  display: inline-block;
+  display: flex;
+  justify-content: space-around;
+  max-width: 380px;
+  min-width: 300px;
   justify-self: center;
   align-self: center;
   grid-area: contact-icons;
@@ -751,6 +755,25 @@ footer {
     margin-top: 80px;
   }
 }
+
+/* ICONS FONTAWESOME */
+
+.fa-linkedin,
+.fa-github,
+.fa-envelope {
+  color: #ccd6f6;
+  text-decoration: none;
+}
+
+.fa-linkedin:hover,
+.fa-github:hover,
+.fa-envelope:hover {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  color: #5bb684;
+  text-decoration: none;
+}
+
 /* LOADER */
 
 .loader-wrapper {
