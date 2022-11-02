@@ -132,7 +132,7 @@ nav ul li a:hover {
 @media only screen and (max-width: 768px) {
   nav ul li a {
     padding: 0 8px;
-    font-size: 60%;
+    font-size: 50%;
   }
 
   nav ul li a:hover {
